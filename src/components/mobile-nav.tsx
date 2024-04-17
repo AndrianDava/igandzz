@@ -31,27 +31,7 @@ export function MobileNav({ className }: { className?: string }) {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <h2 className="mb-4 text-center text-lg font-semibold">
-          Menu
-        </h2>
-        <ul className="mb-8 space-y-3">
-          {siteLinks.map((link) => (
-            <li key={link.href}>
-              <Button
-                variant={pathname === link.href ? "default" : "outline"}
-                asChild
-              >
-                <Link
-                  href={link.href}
-                  className="w-full"
-                  onClick={handleCloseSheet}
-                >
-                  {link.name}
-                </Link>
-              </Button>
-            </li>
-          ))}
-        </ul>
+        
         <Separator className="my-4" />
         <h2 className="mb-4 text-center text-lg font-semibold">
           External Links
@@ -62,8 +42,9 @@ export function MobileNav({ className }: { className?: string }) {
               <Button variant="outline" asChild>
                 <Link
                   href={link.href}
-                  className="w-full"
+                  className="hover:underline"
                   target="_blank"
+                  href="https://github.com"
                   onClick={handleCloseSheet}
                 >
                   {link.name}
