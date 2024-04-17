@@ -44,7 +44,6 @@ export function MobileNav({ className }: { className?: string }) {
                   href={link.href}
                   className="hover:underline"
                   target="_blank"
-                  href="https://github.com"
                   onClick={handleCloseSheet}
                 >
                   {link.name}
