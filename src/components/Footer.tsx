@@ -7,6 +7,9 @@ export function Footer() {
         <div aria-label="Disclaimer" className="text-sm font-semibold">
           andzz
         </div>
+        <div className="flex items-center gap-1 text-sm">
+        </div>
+      </div>
     </footer>
   );
 }
