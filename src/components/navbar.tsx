@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./theme-toggle";
-import { MobileNav } from "./mobile-nav";
 
 export function Navbar() {
   return (
@@ -22,7 +21,6 @@ export function Navbar() {
         <div className="hidden select-none text-xl font-extrabold uppercase md:block">
          IG Downloader
         </div>
-        <MobileNav className="md:hidden" />
         <div className="ml-auto flex items-center gap-4">
           <div className="hidden items-center gap-4 text-lg sm:gap-8 sm:pr-8 md:flex">
             <Link href="/" className="hover:underline">
